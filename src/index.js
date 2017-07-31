@@ -1,8 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './styles/index.css';
+import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import BaseLayout from './components/BaseLayout';
+import CreatePost from './components/CreatePost';
+import PostList from './components/PostList';
+import HomePage from './components/HomePage';
+import ShowPost from './components/ShowPost';
+
+
+ReactDOM.render(
+  <BrowserRouter>
+    <BaseLayout>
+      <Switch>
+        <Route exact path="/" component={ HomePage } />
+        <Route path="/create-post" component={ CreatePost } />
+        <Route path="/show-posts/:id" component={ ShowPost } />
+        <Route path="/show-posts" component={ PostList } />
+      </Switch>
+    </BaseLayout>
+  </BrowserRouter>
+  , document.getElementById('root'));
 registerServiceWorker();
