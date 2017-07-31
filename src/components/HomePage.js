@@ -2,8 +2,10 @@ import React from 'react';
 
 export default function HomePage() {
   return (
-    <div>
-      <h1>Welcome ta PollyBlog Y'ALLLLLLLLL</h1>
+    <div className="home-page">
+      <div className="banner">
+        <p>Welcome to PolyBlog</p>
+      </div>
     </div>
   )
 }

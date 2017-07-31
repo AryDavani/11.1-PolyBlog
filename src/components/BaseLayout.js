@@ -5,7 +5,7 @@ export default function BaseLayout(props) {
   return (
     <div>
       <div className="flex nav-bar">
-        <h1>PollyBlog</h1>
+        <NavLink to="/"><p className="logo">PolyBlog</p></NavLink>
         <NavLink to="/create-post">Create Post</NavLink>
         <NavLink to="/show-posts">Show All Posts</NavLink>
       </div>
