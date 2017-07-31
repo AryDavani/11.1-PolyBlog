@@ -48,7 +48,7 @@ button {
   align-items: center;
 }
 .banner {
-  color: white;
+  color: rgb(255, 248, 226);
   font-weight: 200;
   padding: 20px 50px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -106,7 +106,7 @@ button {
 }
 
 .nav-bar a:hover {
-  color: #fff;
+  color: rgb(255, 248, 226);
 }
 
 .single-post {
