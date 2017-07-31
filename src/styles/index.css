@@ -4,6 +4,38 @@ body {
   font-family: sans-serif;
   background-color: black;
 }
+.form-div {
+  padding: 10px;
+  background-color: white;
+}
+form {
+  font-size: 30px;
+  /*color: white;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form input {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 5px;
+  font-size: 20px;
+  width: 30%;
+  line-height: 30px;
+}
+form textarea {
+  font-size: 20px;
+  width: 50%;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+button {
+  border-radius: 5px;
+  width: 80px;
+  font-size: 20px;
+  padding: 3px;
+  margin-bottom: 80px;
+}
 .home-page {
   background-image: url("../images/low-poly.png");
   background-position: center;
@@ -66,10 +98,6 @@ body {
   color: #F8526E;
 }
 
-/*.logo:hover {
-  color: rgb(255, 252, 0)
-}*/
-
 .nav-bar a {
   font-size: 24px;
   margin: 0px 20px;
@@ -79,4 +107,8 @@ body {
 
 .nav-bar a:hover {
   color: #fff;
+}
+
+.single-post {
+  color: white;
 }

@@ -30,7 +30,7 @@ export default class ShowPost extends Component {
     console.log('my object', this.state.post);
 
     return (
-      <div>
+      <div className="single-post">
         {this.state.post.post}
       </div>
     )

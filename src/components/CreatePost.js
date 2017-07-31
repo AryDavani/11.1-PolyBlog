@@ -34,15 +34,15 @@ export default class CreatePost extends Component {
 
   render(){
     return (
-      <div>
+      <div className="form-div">
         <form onSubmit={ this._handlePostSubmit }>
           <label>Authors Name</label>
           <input type="text" name="name"/>
           <label>Title</label>
           <input type="text" name="title"/>
           <label>Blog Post...</label>
-          <textarea name="post"/>
-          <Link to="/"><button type="submit">Submit</button></Link>
+          <textarea rows="15" name="post"/>
+          <button type="submit">Submit</button>
         </form>
       </div>
     )
