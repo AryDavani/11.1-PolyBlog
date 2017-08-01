@@ -27,7 +27,6 @@ export default class ShowPost extends Component {
   }
 
   render(){
-    console.log('my object', this.state.post);
 
     return (
       <div className="single-post">

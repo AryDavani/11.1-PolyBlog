@@ -36,13 +36,19 @@ export default class CreatePost extends Component {
     return (
       <div className="form-div">
         <form onSubmit={ this._handlePostSubmit }>
-          <label>Authors Name</label>
-          <input type="text" name="name"/>
-          <label>Title</label>
-          <input type="text" name="title"/>
-          <label>Blog Post...</label>
-          <textarea rows="15" name="post"/>
-          <button type="submit">Submit</button>
+          <div className="form-group">
+            <label>Authors Name</label>
+            <input type="text" className="form-control" name="name" placeholder="Enter name" />
+          </div>
+          <div>
+            <label>Title</label>
+            <input type="text" className="form-control" name="title" placeholder="Enter title" />
+          </div>
+          <div className="form-group">
+            <label>Blog Post</label>
+            <textarea className="form-control" name="post" rows="15"></textarea>
+          </div>
+          <button type="submit" className="btn btn-primary">Submit</button>
         </form>
       </div>
     )
