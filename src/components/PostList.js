@@ -27,15 +27,17 @@ export default class PostList extends Component {
     console.log('this props', this.props.match);
     let blogs = this.state.data.map((blog, index) => {
       return (
-        <div key={index}>
+        <div key={index} className="posts">
           <Link to={`${this.props.match.url}/${blog._id}`}>{ blog.title }</Link>
         </div>
       )
     })
 
     return (
-      <div>
-        { blogs }
+      <div className="card">
+        <h4>
+          { blogs }
+        </h4>
       </div>
     )
   }

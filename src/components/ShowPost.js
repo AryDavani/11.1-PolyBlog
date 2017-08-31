@@ -29,8 +29,13 @@ export default class ShowPost extends Component {
   render(){
 
     return (
-      <div className="single-post">
-        {this.state.post.post}
+      <div className="single-post well">
+        <h4>
+          {this.state.post.post}
+        </h4>
+        <p>
+          by: {this.state.post.name}
+        </p>
       </div>
     )
   }

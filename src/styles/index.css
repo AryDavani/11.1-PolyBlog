@@ -94,5 +94,11 @@ button {
 }
 
 .single-post {
-  color: white;
+  padding: 10px;
+  text-align: center;
+}
+.posts {
+  color: #FFDF68;
+  padding: 10px;
+  text-align: center;
 }
